@@ -2011,7 +2011,7 @@ def Small_Location(known):
 
 #Encounters Area Elements Table
 def Encounters(known):
-    Encounters_Element_Die = random.randint(1, 5)
+    Encounters_Element_Die = random.randint(1, 11)
     global Encounters_PP       
     Encounters_Element_Die = Encounters_Element_Die + Encounters_PP
     while True:
@@ -2099,7 +2099,7 @@ def Encounters(known):
 
 #Objects Area Elements Table
 def Objects(known):
-    Objects_Element_Die = random.randint(1, 5)
+    Objects_Element_Die = random.randint(1, 11)
     global Objects_PP
     Objects_Element_Die = Objects_Element_Die + Objects_PP
     while True:
@@ -2107,20 +2107,20 @@ def Objects(known):
             if Objects_Element_Die in range(1,6):
                 print("OBJECTS = None - There is no object element")
                 Objects_PP  = Objects_PP + 1
-                input("\n Press a key when ready to move to the next area")
+                input("\n Press a key when ready to move to the next area \n")
                 Area_Location(known)
             
             elif Objects_Element_Die in range(6,9):
                 print("OBJECTS = Expected - what you most expect for this category at this time")
                 Objects_PP = Objects_PP + 1
-                input("\n Press a key when ready to move to the next area")
+                input("\n Press a key when ready to move to the next area \n")
                 Area_Location(known)
                 
             elif Objects_Element_Die in range(9,11):
                 print("OBJECTS = Random - Location inspired by the following random element descriptors")             
                 Objects_Element_Descriptors()
                 Objects_PP = Objects_PP + 1
-                input("\n Press a key when ready to move to the next area")
+                input("\n Press a key when ready to move to the next area \n")
                 Area_Location(known)
                 
             elif Objects_Element_Die in range(11, 12):
@@ -2134,24 +2134,24 @@ def Objects(known):
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
-                            input("\n Press a key when ready to move to the next area")
+                            input("\n Press a key when ready to move to the next area \n")
                             Area_Location(known)
                             
                 elif (str(known)) == '[]' and Objects_Element_Die_11.casefold() == "Known".casefold():
                     print("No Known is Available, defaulting to expected")
                     print("Object = Expected - what you most expect for this category at this time")
-                    input("\n Press a key when ready to move to the next area")
+                    input("\n Press a key when ready to move to the next area \n")
                     Area_Location(known) 
                         
                 elif Objects_Element_Die_11.casefold() == "Random".casefold():
                     Objects_Element_Descriptors()
-                    input("\n Press a key when ready to move to the next area")
+                    input("\n Press a key when ready to move to the next area \n")
                     Area_Location(known)   
             
             elif Objects_Element_Die in range(12, 13):
                 print("OBJECT = None - There is no object element")
                 Objects_PP  = Objects_PP + 1
-                input("\n Press a key when ready to move to the next area")                
+                input("\n Press a key when ready to move to the next area \n")                
                 Area_Location(known)
                     
             elif Objects_Element_Die in range(13, 14):
@@ -2166,7 +2166,7 @@ def Objects(known):
                         else:
                             print("OBJECT:  ", end='') 
                             (print(KnownInput))
-                            input("\n Press a key when ready to move to the next area")                            
+                            input("\n Press a key when ready to move to the next area \n")                            
                             Area_Location(known)
                             
                 elif (str(known)) == '[]':
@@ -2181,13 +2181,13 @@ def Objects(known):
             elif Objects_Element_Die in range(14, 16):
                 print("OBJECTS = Expected - what you most expect for this category at this time")
                 Objects_PP = Objects_PP + 1
-                input("\n Press a key when ready to move to the next area")                
+                input("\n Press a key when ready to move to the next area \n \n")                
                 Area_Location(known)
                 
             elif Objects_Element_Die in range(16, 999):
                 print("OBJECTS = Expected - what you most expect for this category at this time")
                 Objects_PP = Objects_PP - 6
-                input("\n Press a key when ready to move to the next area")                
+                input("\n Press a key when ready to move to the next area \n \n")                
                 Area_Location(known)
                   
             else:
@@ -2464,14 +2464,14 @@ def Objects_Special_Element_Table(known):
                         Objects_PP = Objects_PP + 1
                         print("SUPERSIZE: Enhance this Object Element:")
                         Special_Element_Large_Location(known)
-                        input("\n Press a key when ready to move to the next area")                        
+                        input("\n Press a key when ready to move to the next area \n")                        
                         Area_Location(known)
                     
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("SUPERSIZE: Enhance this Object Element:")
                         Special_Element_Small_Location(known)
-                        input("\n Press a key when ready to move to the next area")                        
+                        input("\n Press a key when ready to move to the next area \n")                        
                         Area_Location(known)
                 
                 if Special_Element_Roll_One in range (11, 21):
@@ -2480,14 +2480,14 @@ def Objects_Special_Element_Table(known):
                         Objects_PP = Objects_PP + 1
                         print("BARELY THERE: Minimize this Object Element:")
                         Special_Element_Large_Location(known)
-                        input("\n Press a key when ready to move to the next area")                        
+                        input("\n Press a key when ready to move to the next area \n")                        
                         Area_Location(known)
                     
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("BARELY THERE: Minimize this Object Element:")
                         Special_Element_Small_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                 if Special_Element_Roll_One in range(21, 31):
@@ -2496,14 +2496,14 @@ def Objects_Special_Element_Table(known):
                         Objects_PP = Objects_PP + 1
                         print("THIS IS BAD: This Object Element is BAD for the PC's:")
                         Special_Element_Large_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                     
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("THIS IS BAD: This Object Element is BAD for the PC's:")
                         Special_Element_Small_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                 
                 if Special_Element_Roll_One in range(31, 41):
@@ -2512,14 +2512,14 @@ def Objects_Special_Element_Table(known):
                         Objects_PP = Objects_PP + 1
                         print("THIS IS GOOD: This Object Element is GOOD for the PC's:")
                         Special_Element_Large_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                     
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("THIS IS GOOD: This Object Element is GOOD for the PC's:")
                         Special_Element_Small_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                 
                 if Special_Element_Roll_One in range(41, 51):
@@ -2529,7 +2529,7 @@ def Objects_Special_Element_Table(known):
                         print("MULTIELEMENT: Two elements combine to make up this Object:")
                         Special_Element_Large_Location(known)
                         Special_Element_Large_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                     
                     elif Location_Size.casefold() == "Small".casefold():
@@ -2537,59 +2537,59 @@ def Objects_Special_Element_Table(known):
                         print("MULTIELEMENT: Two elements combine to make up this Object:")
                         Special_Element_Small_Location(known)
                         Special_Element_Small_Location(known)
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                 
                 if Special_Element_Roll_One in range(51, 66):
                     if Location_Size.casefold() == "LARGE".casefold():
                         Objects_PP = Objects_PP + 1
                         print("EXIT HERE: This Object contains an exit or an Expected Element")
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("EXIT HERE: This Object contains an exit or an Expected Element")
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                 if Special_Element_Roll_One in range(66, 81):
                     if Location_Size.casefold() == "LARGE".casefold():
                         Objects_PP = Objects_PP + 1
                         print("RETURN: This Object contains a connection to another Object or is an Expected Element")
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                     elif Location_Size.casefold() == "Small".casefold():
                         Objects_PP = Objects_PP + 1
                         print("RETURN: This Object contains a connection to another Object or is an Expected Element")
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                 if Special_Element_Roll_One in range(81, 91):
                     if Location_Size.casefold() == "LARGE".casefold():
                         print("GOING DEEPER(+3 PP): Expected - what you most expect for this category at this time")
                         Objects_PP = Objects_PP + 3
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                     elif Location_Size.casefold() == "Small".casefold():
                         print("GOING DEEPER(+3 PP): Expected - what you most expect for this category at this time")
                         Objects_PP = Objects_PP + 3
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known) 
                         
                 if Special_Element_Roll_One in range(91, 101):
                     if Location_Size.casefold() == "LARGE".casefold():
                         print("COMMON GROUND(-3 PP): Expected - what you most expect for this category at this time")
                         Objects_PP = Objects_PP -3
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)
                         
                     elif Location_Size.casefold() == "Small".casefold():                    
                         print("COMMON GROUND(-3 PP): Expected - what you most expect for this category at this time")
                         Objects_PP = Objects_PP -3
-                        input("\n Press a key when ready to move to the next area")                         
+                        input("\n Press a key when ready to move to the next area \n")                         
                         Area_Location(known)  
                 else:
                     print("Your entries are invalid try again")
@@ -5842,18 +5842,4 @@ def Objects_Element_Descriptors():
 
 
 RegionDesc_LocationSize()
-Known_Elements()  
-""" 
-    Ask the player for any known values and then output them to the console
-    
-    If Large use Locations, Large
-    If Small use Locations, Small
-    
-    Roll 1d10 on Locations(Large or small whichever is applicable)
-    Roll 1d10 for Encounters
-    Roll 1d10 for Objects
-    
-    Add to the rolls as applicable then repeat
-
-"""
-
+Known_Elements()

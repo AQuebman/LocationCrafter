@@ -1834,6 +1834,7 @@ def Large_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -1857,6 +1858,7 @@ def Large_Location(known):
                     KnownInput = input("Pick which known applies  ").casefold()
                     while KnownInput not in known:
                         print("Known selection not in list")
+                        KnownInput = input("Pick a known that applies  ").casefold()
                     else:
                         print("LOCATION:  ", end='')
                         (print(KnownInput))
@@ -1933,6 +1935,7 @@ def Small_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -1970,6 +1973,7 @@ def Small_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -1980,7 +1984,7 @@ def Small_Location(known):
                     #PP gets added in the special elements table             
                     Special_Element_Table(known)
                 
-                elif Small_Location_Number_13.casefold() == "Expected".casefold():
+                elif Small_Location_Number_13.casefold() == "Special".casefold():
                     #PP gets added in the special elements table             
                     Special_Element_Table(known)
                     
@@ -2040,6 +2044,7 @@ def Encounters(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -2068,6 +2073,7 @@ def Encounters(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("ENCOUNTER:  ", end='') 
                             (print(KnownInput))
@@ -2078,7 +2084,7 @@ def Encounters(known):
                     #PP gets added in the special elements table             
                     Encounter_Special_Element_Table(known)
                 
-                elif Encounters_Element_Number_13.casefold() == "Expected".casefold():
+                elif Encounters_Element_Number_13.casefold() == "Special".casefold():
                     #PP gets added in the special elements table             
                     Encounter_Special_Element_Table(known)
                     
@@ -2131,6 +2137,7 @@ def Objects(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -2163,6 +2170,7 @@ def Objects(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("OBJECT:  ", end='') 
                             (print(KnownInput))
@@ -2174,7 +2182,7 @@ def Objects(known):
                     #PP gets added in the special elements table             
                     Objects_Special_Element_Table(known)
                 
-                elif Objects_Element_Number_13.casefold() == "Expected".casefold():
+                elif Objects_Element_Number_13.casefold() == "Special".casefold():
                     #PP gets added in the special elements table             
                     Objects_Special_Element_Table(known)
                     
@@ -2622,6 +2630,7 @@ def Special_Element_Large_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("SPECIAL LARGE LOCATION:  ", end='')  
                             (print(KnownInput))
@@ -2643,6 +2652,7 @@ def Special_Element_Large_Location(known):
                     KnownInput = input("Pick which known applies  ").casefold()
                     while KnownInput not in known:
                         print("Known selection not in list")
+                        KnownInput = input("Pick a known that applies  ").casefold()
                     else:
                         print("SPECIAL LARGE LOCATION:  ", end='')
                         (print(KnownInput))
@@ -2709,6 +2719,7 @@ def Special_Element_Small_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -2746,6 +2757,7 @@ def Special_Element_Small_Location(known):
                         KnownInput = input("Pick which known applies  ").casefold()
                         while KnownInput not in known:
                             print("Known selection not in list")
+                            KnownInput = input("Pick a known that applies  ").casefold()
                         else:
                             print("Location:  ", end='') 
                             (print(KnownInput))
@@ -2756,7 +2768,7 @@ def Special_Element_Small_Location(known):
                     print("SPECIAL TABLE: Small Location = Expected - what you most expect for this category at this time")
                     break
                 
-                elif Small_Location_Number_13.casefold() == "Expected".casefold():
+                elif Small_Location_Number_13.casefold() == "Special".casefold():
                     print("SPECIAL TABLE: Large Location = Expected - what you most expect for this category at this time")
                     break
                     
@@ -2792,502 +2804,502 @@ def Location_Element_Descriptors():
             Location_Random_Element_Descriptors_Roll_Two = random.randint(1,101)
             
             if Location_Random_Element_Descriptors_Roll_One == 1:
-                Random_Element_Descriptor_One = ("Location Random Element: Abandoned")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Abandoned")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 2:
-                Random_Element_Descriptor_One = ("Location Random Element: Amusing")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Amusing")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 3:
-                Random_Element_Descriptor_One = ("Location Random Element: Ancient")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Ancient")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 4:
-                Random_Element_Descriptor_One = ("Location Random Element: Aromatic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Aromatic")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 5:
-                Random_Element_Descriptor_One = ("Location Random Element: Beautiful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Beautiful")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 6:
-                Random_Element_Descriptor_One = ("Location Random Element: Bleak")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Bleak")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 7:
-                Random_Element_Descriptor_One = ("Location Random Element: Average")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Average")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Location_Random_Element_Descriptors_Roll_One == 8:
-                Random_Element_Descriptor_One = ("Location Random Element: Bizarre")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Bizarre")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 9:
-                Random_Element_Descriptor_One = ("Location Random Element: Calm")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Calm")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 10:
-                Random_Element_Descriptor_One = ("Location Random Element: Classy")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Classy")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 11:
-                Random_Element_Descriptor_One = ("Location Random Element: Clean")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Clean")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 12:
-                Random_Element_Descriptor_One = ("Location Random Element: Colorful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Colorful")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 13:
-                Random_Element_Descriptor_One = ("Location Random Element: Creepy")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Creepy")
                 print(Random_Element_Descriptor_One)
                 break         
             
             elif Location_Random_Element_Descriptors_Roll_One == 14:
-                Random_Element_Descriptor_One = ("Location Random Element: Cold")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Cold")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 15:
-                Random_Element_Descriptor_One = ("Location Random Element: Cute")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Cute")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Location_Random_Element_Descriptors_Roll_One == 16:
-                Random_Element_Descriptor_One = ("Location Random Element: Damaged")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Damaged")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 17:
-                Random_Element_Descriptor_One = ("Location Random Element: Dangerous")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Dangerous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 18:
-                Random_Element_Descriptor_One = ("Location Random Element: Dark")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Dark")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Location_Random_Element_Descriptors_Roll_One == 19:
-                Random_Element_Descriptor_One = ("Location Random Element: Dirty")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Dirty")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 20:
-                Random_Element_Descriptor_One = ("Location Random Element: Delightful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Delightful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 21:
-                Random_Element_Descriptor_One = ("Location Random Element: Drab")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Drab")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 22:
-                Random_Element_Descriptor_One = ("Location Random Element: Disgusting")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Disgusting")
                 print(Random_Element_Descriptor_One)
                 break        
             
             elif Location_Random_Element_Descriptors_Roll_One == 23:
-                Random_Element_Descriptor_One = ("Location Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 24:
-                Random_Element_Descriptor_One = ("Location Random Element: Dry")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Dry")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 25:
-                Random_Element_Descriptor_One = ("Location Random Element: Empty")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Empty")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 26:
-                Random_Element_Descriptor_One = ("Location Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 27:
-                Random_Element_Descriptor_One = ("Location Random Element: Exotic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Exotic")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 28:
-                Random_Element_Descriptor_One = ("Location Random Element: Fortunate")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Fortunate")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 29:
-                Random_Element_Descriptor_One = ("Location Random Element: Familiar")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Familiar")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 30:
-                Random_Element_Descriptor_One = ("Location Random Element: Frightening")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Frightening")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 31:
-                Random_Element_Descriptor_One = ("Location Random Element: Full")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Full")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 32:
-                Random_Element_Descriptor_One = ("Location Random Element: Fancy")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Fancy")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 33:
-                Random_Element_Descriptor_One = ("Location Random Element: Festive")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Festive")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 34:
-                Random_Element_Descriptor_One = ("Location Random Element: Harsh")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Harsh")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 35:
-                Random_Element_Descriptor_One = ("Location Random Element: Horrible")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Horrible")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Location_Random_Element_Descriptors_Roll_One == 36:
-                Random_Element_Descriptor_One = ("Location Random Element: Important")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Important")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 37:
-                Random_Element_Descriptor_One = ("Location Random Element: Helpful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Helpful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 38:
-                Random_Element_Descriptor_One = ("Location Random Element: Lavish")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Lavish")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 39:
-                Random_Element_Descriptor_One = ("Location Random Element: Magnificent")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Magnificent")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 40:
-                Random_Element_Descriptor_One = ("Location Random Element: Intense")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Intense")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 41:
-                Random_Element_Descriptor_One = ("Location Random Element: Messy")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Messy")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 42:
-                Random_Element_Descriptor_One = ("Location Random Element: Military")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Military")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 43:
-                Random_Element_Descriptor_One = ("Location Random Element: Loud")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Loud")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 44:
-                Random_Element_Descriptor_One = ("Location Random Element: Modern")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Modern")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 45:
-                Random_Element_Descriptor_One = ("Location Random Element: Majestic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Majestic")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 46:
-                Random_Element_Descriptor_One = ("Location Random Element: Meaningful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Meaningful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 47:
-                Random_Element_Descriptor_One = ("Location Random Element: Extravagant")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Extravagant")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 48:
-                Random_Element_Descriptor_One = ("Location Random Element: Mundane")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Mundane")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 49:
-                Random_Element_Descriptor_One = ("Location Random Element: Mysterious")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Mysterious")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 50:
-                Random_Element_Descriptor_One = ("Location Random Element: Natural")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Natural")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 51:
-                Random_Element_Descriptor_One = ("Location Random Element: Odd")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Odd")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 52:
-                Random_Element_Descriptor_One = ("Location Random Element: Official")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Official")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 53:
-                Random_Element_Descriptor_One = ("Location Random Element: Peaceful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Peaceful")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 54:
-                Random_Element_Descriptor_One = ("Location Random Element: Small")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Small")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 55:
-                Random_Element_Descriptor_One = ("Location Random Element: Positive")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Positive")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 56:
-                Random_Element_Descriptor_One = ("Location Random Element: Reassuring")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Reassuring")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 57:
-                Random_Element_Descriptor_One = ("Location Random Element: Quaint")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Quaint")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 58:
-                Random_Element_Descriptor_One = ("Location Random Element: Quiet")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Quiet")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 59:
-                Random_Element_Descriptor_One = ("Location Random Element: Ruined")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Ruined")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 60:
-                Random_Element_Descriptor_One = ("Location Random Element: Rustic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Rustic")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 61:
-                Random_Element_Descriptor_One = ("Location Random Element: Simple")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Simple")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 62:
-                Random_Element_Descriptor_One = ("Location Random Element: Threatening")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Threatening")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 63:
-                Random_Element_Descriptor_One = ("Location Random Element: Smelly")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Smelly")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 64:
-                Random_Element_Descriptor_One = ("Location Random Element: Tranquil")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Tranquil")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 65:
-                Random_Element_Descriptor_One = ("Location Random Element: Warm")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Warm")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 66:
-                Random_Element_Descriptor_One = ("Location Random Element: Watery")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Watery")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 67:
-                Random_Element_Descriptor_One = ("Location Random Element: Negative")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Negative")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 68:
-                Random_Element_Descriptor_One = ("Location Random Element: Enclosed")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Enclosed")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 69:
-                Random_Element_Descriptor_One = ("Location Random Element: Domestic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Domestic")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 70:
-                Random_Element_Descriptor_One = ("Location Random Element: New")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: New")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 71:
-                Random_Element_Descriptor_One = ("Location Random Element: Open")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Open")
                 print(Random_Element_Descriptor_One)
                 break  
          
             elif Location_Random_Element_Descriptors_Roll_One == 72:
-                Random_Element_Descriptor_One = ("Location Random Element: Safe")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Safe")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 73:
-                Random_Element_Descriptor_One = ("Location Random Element: Expected")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Expected")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 74:
-                Random_Element_Descriptor_One = ("Location Random Element: Unexpected")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Unexpected")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 75:
-                Random_Element_Descriptor_One = ("Location Random Element: Strange")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Strange")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 76:
-                Random_Element_Descriptor_One = ("Location Random Element: Active")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Active")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 77:
-                Random_Element_Descriptor_One = ("Location Random Element: Inactive")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Inactive")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 78:
-                Random_Element_Descriptor_One = ("Location Random Element: Harmful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Harmful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 79:
-                Random_Element_Descriptor_One = ("Location Random Element: Primitive")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Primitive")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Location_Random_Element_Descriptors_Roll_One == 80:
-                Random_Element_Descriptor_One = ("Location Random Element: Protection")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Protection")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 81:
-                Random_Element_Descriptor_One = ("Location Random Element: Unusual")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Unusual")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 82:
-                Random_Element_Descriptor_One = ("Location Random Element: Bright")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Bright")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 83:
-                Random_Element_Descriptor_One = ("Location Random Element: Ornate")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Ornate")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 84:
-                Random_Element_Descriptor_One = ("Location Random Element: Atmosphere")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Atmosphere")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 85:
-                Random_Element_Descriptor_One = ("Location Random Element: Sounds")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Sounds")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 86:
-                Random_Element_Descriptor_One = ("Location Random Element: Resourceful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Resourceful")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Location_Random_Element_Descriptors_Roll_One == 87:
-                Random_Element_Descriptor_One = ("Location Random Element:  Purposeful")
+                Random_Element_Descriptor_One = ("\tLocation Random Element:  Purposeful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 88:
-                Random_Element_Descriptor_One = ("Location Random Element: Personal")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Personal")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 89:
-                Random_Element_Descriptor_One = ("Location Random Element: Exclusive")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Exclusive")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Location_Random_Element_Descriptors_Roll_One == 90:
-                Random_Element_Descriptor_One = ("Location Random Element: Intriguing")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Intriguing")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Location_Random_Element_Descriptors_Roll_One == 91:
-                Random_Element_Descriptor_One = ("Location Random Element: Echo")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Echo")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 92:
-                Random_Element_Descriptor_One = ("Location Random Element: Unsteady")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Unsteady")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 93:
-                Random_Element_Descriptor_One = ("Location Random Element: Moving")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Moving")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Location_Random_Element_Descriptors_Roll_One == 94:
-                Random_Element_Descriptor_One = ("Location Random Element: Cluttered")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Cluttered")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 95:
-                Random_Element_Descriptor_One = ("Location Random Element: Storage")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Storage")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 96:
-                Random_Element_Descriptor_One = ("Location Random Element: Confusing")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Confusing")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 97:
-                Random_Element_Descriptor_One = ("Location Random Element: Lonely")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Lonely")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Location_Random_Element_Descriptors_Roll_One == 98:
-                Random_Element_Descriptor_One = ("Location Random Element: Long")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Long")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Location_Random_Element_Descriptors_Roll_One == 99:
-                Random_Element_Descriptor_One = ("Location Random Element: Tall")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Tall")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Location_Random_Element_Descriptors_Roll_One == 100:
-                Random_Element_Descriptor_One = ("Location Random Element: Artistic")
+                Random_Element_Descriptor_One = ("\tLocation Random Element: Artistic")
                 print(Random_Element_Descriptor_One)
                 break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             
@@ -3299,502 +3311,502 @@ def Location_Element_Descriptors():
     while True:
         try:
                 if Location_Random_Element_Descriptors_Roll_Two == 1:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Abandoned")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Abandoned")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 2:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Amusing")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Amusing")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 3:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Ancient")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Ancient")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 4:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Aromatic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Aromatic")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 5:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Beautiful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Beautiful")
                     print(Random_Element_Descriptor_Two)
                     break
                
                 elif Location_Random_Element_Descriptors_Roll_Two == 6:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Bleak")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Bleak")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 7:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Average")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Average")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 8:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Bizarre")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Bizarre")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 9:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Calm")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Calm")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 10:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Classy")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Classy")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 11:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Clean")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Clean")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 12:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Colorful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Colorful")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 13:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Creepy")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Creepy")
                     print(Random_Element_Descriptor_Two)
                     break         
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 14:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Cold")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Cold")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 15:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Cute")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Cute")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 16:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Damaged")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Damaged")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 17:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Dangerous")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Dangerous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 18:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Dark")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Dark")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 19:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Dirty")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Dirty")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 20:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Delightful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Delightful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 21:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Drab")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Drab")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 22:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Disgusting")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Disgusting")
                     print(Random_Element_Descriptor_Two)
                     break        
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 23:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 24:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Dry")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Dry")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 25:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Empty")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Empty")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 26:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 27:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Exotic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Exotic")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 28:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Fortunate")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Fortunate")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 29:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Familiar")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Familiar")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 30:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Frightening")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Frightening")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 31:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Full")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Full")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 32:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Fancy")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Fancy")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 33:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Festive")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Festive")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 34:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Harsh")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Harsh")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 35:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Horrible")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Horrible")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 36:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Important")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Important")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 37:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Helpful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Helpful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 38:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Lavish")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Lavish")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 39:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Magnificent")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Magnificent")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 40:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Intense")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Intense")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 41:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Messy")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Messy")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 42:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Military")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Military")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 43:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Loud")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Loud")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 44:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Modern")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Modern")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 45:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Majestic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Majestic")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 46:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Meaningful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Meaningful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 47:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Extravagant")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Extravagant")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 48:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Mundane")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Mundane")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 49:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Mysterious")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Mysterious")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 50:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Natural")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Natural")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 51:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Odd")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Odd")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 52:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Official")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Official")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 53:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Peaceful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Peaceful")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 54:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Small")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Small")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 55:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Positive")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Positive")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 56:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Reassuring")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Reassuring")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 57:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Quaint")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Quaint")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 58:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Quiet")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Quiet")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 59:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Ruined")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Ruined")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 60:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Rustic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Rustic")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 61:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Simple")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Simple")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 62:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Threatening")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Threatening")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 63:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Smelly")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Smelly")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 64:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Tranquil")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Tranquil")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 65:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Warm")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Warm")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 66:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Watery")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Watery")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 67:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Negative")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Negative")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 68:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Enclosed")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Enclosed")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 69:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Domestic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Domestic")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 70:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: New")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: New")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 71:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Open")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Open")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 72:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Safe")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Safe")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 73:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Expected")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Expected")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 74:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Unexpected")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Unexpected")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 75:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Strange")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Strange")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 76:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Active")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Active")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 77:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Inactive")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Inactive")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 78:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Harmful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Harmful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 79:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Primitive")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Primitive")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 80:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Protection")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Protection")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 81:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Unusual")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Unusual")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 82:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Bright")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Bright")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 83:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Ornate")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Ornate")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 84:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Atmosphere")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Atmosphere")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 85:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Sounds")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Sounds")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 86:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Resourceful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Resourceful")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 87:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Purposeful")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Purposeful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 88:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Personal")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Personal")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 89:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Exclusive")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Exclusive")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 90:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Intriguing")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Intriguing")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 91:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Echo")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Echo")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 92:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Unsteady")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Unsteady")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 93:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Moving")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Moving")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 94:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Cluttered")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Cluttered")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 95:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Storage")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Storage")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 96:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Confusing")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Confusing")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 97:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Lonely")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Lonely")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 98:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Long")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Long")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 99:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Tail")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Tail")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Location_Random_Element_Descriptors_Roll_Two == 100:
-                    Random_Element_Descriptor_Two = ("Location Random Element #2: Artistic")
+                    Random_Element_Descriptor_Two = ("\tLocation Random Element #2: Artistic")
                     print(Random_Element_Descriptor_Two)
                     break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
                 
@@ -3810,502 +3822,502 @@ def Encounters_Element_Descriptors():
             Encounter_Random_Element_Descriptors_Roll_Two = random.randint(1,101)
             
             if Encounter_Random_Element_Descriptors_Roll_One == 1:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Abnormal")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Abnormal")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 2:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Aggressive")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Aggressive")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 3:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Angry")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Angry")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 4:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Anxious")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Anxious")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 5:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Beautiful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Beautiful")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 6:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Average")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Average")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 7:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Bold")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Bold")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 8:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Busy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Busy")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 9:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Calm")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Calm")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 10:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Careless")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Careless")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 11:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Cautious")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Cautious")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 12:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Cheerful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Cheerful")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 13:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Combative")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Combative")
                 print(Random_Element_Descriptor_One)
                 break         
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 14:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Bizarre")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Bizarre")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 15:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Crazy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Crazy")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 16:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Curious")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Curious")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 17:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Dangerous")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Dangerous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 18:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Defiant")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Defiant")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 19:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Classy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Classy")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 20:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Delightful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Delightful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 21:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Creepy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Creepy")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 22:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Energetic")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Energetic")
                 print(Random_Element_Descriptor_One)
                 break        
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 23:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 24:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Excited")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Excited")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 25:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Fearful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Fearful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 26:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Ferocious")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Ferocious")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 27:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Foolish")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Foolish")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 28:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Fortunate")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Fortunate")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 29:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Frantic")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Frantic")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 30:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Frightening")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Frightening")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 31:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Cute")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Cute")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 32:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Generous")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Generous")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 33:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Gentle")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Gentle")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 34:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Glad")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Glad")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 35:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Graceful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Graceful")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 36:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Happy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Happy")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 37:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Helpful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Helpful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 38:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Helpless")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Helpless")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 39:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Innocent")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Innocent")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 40:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Intense")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Intense")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 41:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Lazy")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Lazy")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 42:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Defeated")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Defeated")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 43:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Loud")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Loud")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 44:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Loyal")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Loyal")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 45:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Majestic")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Majestic")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 46:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Disgusting")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Disgusting")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 47:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 48:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Miserable")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Miserable")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 49:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Mysterious")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Mysterious")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 50:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Feeble")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Feeble")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 51:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Odd")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Odd")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 52:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Official")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Official")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 53:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Peaceful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Peaceful")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 54:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Playful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Playful")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 55:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Positive")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Positive")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 56:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Powerful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Powerful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 57:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Exotic")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Exotic")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 58:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Familiar")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Familiar")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 59:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Slow")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Slow")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 60:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Horrible")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Horrible")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 61:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Swift")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Swift")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 62:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Threatening")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Threatening")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 63:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Violent")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Violent")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 64:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Wild")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Wild")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 65:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Important")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Important")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 66:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Lonely")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Lonely")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 67:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Mighty")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Mighty")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 68:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Military")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Military")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 69:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Mundane")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Mundane")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 70:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Powerful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Powerful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 71:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Reassuring")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Reassuring")
                 print(Random_Element_Descriptor_One)
                 break  
          
             elif Encounter_Random_Element_Descriptors_Roll_One == 72:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Small")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Small")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 73:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Smelly")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Smelly")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 74:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Strong")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Strong")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 75:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Watery")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Watery")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 76:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Weak")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Weak")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 77:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Ambush")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Ambush")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 78:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Harmful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Harmful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 79:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Trap")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Trap")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 80:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Friend")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Friend")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 81:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Foe")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Foe")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 82:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Negative")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Negative")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 83:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Evil")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Evil")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 84:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Animal")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Animal")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 85:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Expected")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Expected")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 86:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Unexpected")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Unexpected")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 87:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Strange")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Strange")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 88:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Armed")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Armed")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 89:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Active")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Active")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 90:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Inactive")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Inactive")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 91:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Multiple")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Multiple")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 92:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Single")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Single")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 93:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Primitive")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Primitive")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 94:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Unusual")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Unusual")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 95:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Fast")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Fast")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 96:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Hidden")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Hidden")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 97:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Natural")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Natural")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 98:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Quiet")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Quiet")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 99:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Unnatural")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Unnatural")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Encounter_Random_Element_Descriptors_Roll_One == 100:
-                Random_Element_Descriptor_One = ("Encounter Random Element: Resourceful")
+                Random_Element_Descriptor_One = ("\tEncounter Random Element: Resourceful")
                 print(Random_Element_Descriptor_One)
                 break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             
@@ -4317,502 +4329,502 @@ def Encounters_Element_Descriptors():
     while True:
         try:
                 if Encounter_Random_Element_Descriptors_Roll_Two == 1:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Abnormal")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Abnormal")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 2:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Aggressive")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Aggressive")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 3:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Angry")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Angry")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 4:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Anxious")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Anxious")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 5:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Beautiful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Beautiful")
                     print(Random_Element_Descriptor_Two)
                     break
                
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 6:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Average")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Average")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 7:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Bold")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Bold")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 8:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Busy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Busy")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 9:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Calm")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Calm")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 10:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Careless")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Careless")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 11:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Cautious")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Cautious")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 12:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Cheerful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Cheerful")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 13:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Combative")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Combative")
                     print(Random_Element_Descriptor_Two)
                     break         
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 14:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Bizarre")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Bizarre")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 15:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Crazy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Crazy")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 16:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Curious")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Curious")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 17:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Dangerous")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Dangerous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 18:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Defiant")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Defiant")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 19:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Classy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Classy")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 20:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Delightful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Delightful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 21:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Creepy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Creepy")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 22:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Energetic")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Energetic")
                     print(Random_Element_Descriptor_Two)
                     break        
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 23:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 24:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Excited")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Excited")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 25:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Fearful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Fearful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 26:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Ferocious")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Ferocious")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 27:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Foolish")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Foolish")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 28:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Fortunate")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Fortunate")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 29:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Frantic")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Frantic")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 30:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Frightening")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Frightening")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 31:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Cute")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Cute")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 32:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Generous")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Generous")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 33:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Gentle")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Gentle")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 34:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Glad")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Glad")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 35:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Graceful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Graceful")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 36:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Happy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Happy")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 37:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Helpful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Helpful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 38:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Helpless")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Helpless")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 39:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Innocent")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Innocent")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 40:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Intense")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Intense")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 41:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Lazy")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Lazy")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 42:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Defeated")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Defeated")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 43:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Loud")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Loud")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 44:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Loyal")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Loyal")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 45:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Majestic")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Majestic")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 46:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Disgusting")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Disgusting")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 47:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 48:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Miserable")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Miserable")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 49:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Mysterious")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Mysterious")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 50:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Feeble")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Feeble")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 51:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Odd")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Odd")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 52:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Official")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Official")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 53:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Peaceful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Peaceful")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 54:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Playful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Playful")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 55:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Positive")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Positive")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 56:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Powerful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Powerful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 57:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Exotic")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Exotic")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 58:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Familiar")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Familiar")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 59:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Slow")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Slow")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 60:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Horrible")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Horrible")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 61:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Swift")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Swift")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 62:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Threatening")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Threatening")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 63:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Violent")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Violent")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 64:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Wild")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Wild")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 65:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Important")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Important")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 66:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Lonely")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Lonely")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 67:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Mighty")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Mighty")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 68:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Military")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Military")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 69:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Mundane")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Mundane")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 70:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Powerful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Powerful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 71:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Reassuring")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Reassuring")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 72:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Small")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Small")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 73:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Smelly")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Smelly")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 74:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Strong")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Strong")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 75:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Watery")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Watery")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 76:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Weak")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Weak")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 77:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Ambush")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Ambush")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 78:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Harmful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Harmful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 79:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Trap")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Trap")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 80:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Friend")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Friend")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 81:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Foe")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Foe")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 82:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Negative")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Negative")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 83:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Evil")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Evil")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 84:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Animal")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Animal")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 85:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Expected")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Expected")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 86:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Unexpected")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Unexpected")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 87:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Strange")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Strange")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 88:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Armed")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Armed")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 89:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Active")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Active")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 90:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Inactive")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Inactive")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 91:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Multiple")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Multiple")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 92:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Single")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Single")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 93:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Primitive")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Primitive")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 94:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Unusual")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Unusual")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 95:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Fast")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Fast")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 96:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Hidden")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Hidden")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 97:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Natural")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Natural")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 98:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Quiet")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Quiet")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 99:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Unnatural")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Unnatural")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Encounter_Random_Element_Descriptors_Roll_Two == 100:
-                    Random_Element_Descriptor_Two = ("Encounter Random Element #2: Resourceful")
+                    Random_Element_Descriptor_Two = ("\tEncounter Random Element #2: Resourceful")
                     print(Random_Element_Descriptor_Two)
                     break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
                 
@@ -4829,502 +4841,502 @@ def Objects_Element_Descriptors():
             Object_Random_Element_Descriptors_Roll_Two = random.randint(1,101)
             
             if Object_Random_Element_Descriptors_Roll_One == 1:
-                Random_Element_Descriptor_One = ("Object Random Element: Amusing")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Amusing")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 2:
-                Random_Element_Descriptor_One = ("Object Random Element: Ancient")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Ancient")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 3:
-                Random_Element_Descriptor_One = ("Object Random Element: Aromatic")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Aromatic")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 4:
-                Random_Element_Descriptor_One = ("Object Random Element: Average")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Average")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 5:
-                Random_Element_Descriptor_One = ("Object Random Element: Beautiful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Beautiful")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 6:
-                Random_Element_Descriptor_One = ("Object Random Element: Bizarre")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Bizarre")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 7:
-                Random_Element_Descriptor_One = ("Object Random Element: Classy")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Classy")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Object_Random_Element_Descriptors_Roll_One == 8:
-                Random_Element_Descriptor_One = ("Object Random Element: Colorful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Colorful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 9:
-                Random_Element_Descriptor_One = ("Object Random Element: Creepy")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Creepy")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 10:
-                Random_Element_Descriptor_One = ("Object Random Element: Cute")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Cute")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 11:
-                Random_Element_Descriptor_One = ("Object Random Element: Damaged")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Damaged")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 12:
-                Random_Element_Descriptor_One = ("Object Random Element: Delicate")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Delicate")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 13:
-                Random_Element_Descriptor_One = ("Object Random Element: Disgusting")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Disgusting")
                 print(Random_Element_Descriptor_One)
                 break         
             
             elif Object_Random_Element_Descriptors_Roll_One == 14:
-                Random_Element_Descriptor_One = ("Object Random Element: Cold")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Cold")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 15:
-                Random_Element_Descriptor_One = ("Object Random Element: Empty")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Empty")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Object_Random_Element_Descriptors_Roll_One == 16:
-                Random_Element_Descriptor_One = ("Object Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 17:
-                Random_Element_Descriptor_One = ("Object Random Element: Dangerous")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Dangerous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 18:
-                Random_Element_Descriptor_One = ("Object Random Element: Exotic")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Exotic")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Object_Random_Element_Descriptors_Roll_One == 19:
-                Random_Element_Descriptor_One = ("Object Random Element: Deliberate")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Deliberate")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 20:
-                Random_Element_Descriptor_One = ("Object Random Element: Delightful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Delightful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 21:
-                Random_Element_Descriptor_One = ("Object Random Element: Faded")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Faded")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 22:
-                Random_Element_Descriptor_One = ("Object Random Element: Familiar")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Familiar")
                 print(Random_Element_Descriptor_One)
                 break        
             
             elif Object_Random_Element_Descriptors_Roll_One == 23:
-                Random_Element_Descriptor_One = ("Object Random Element: Enormous")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Enormous")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 24:
-                Random_Element_Descriptor_One = ("Object Random Element: Fancy")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Fancy")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 25:
-                Random_Element_Descriptor_One = ("Object Random Element: Hard")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Hard")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 26:
-                Random_Element_Descriptor_One = ("Object Random Element: Heavy")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Heavy")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 27:
-                Random_Element_Descriptor_One = ("Object Random Element: Horrible")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Horrible")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 28:
-                Random_Element_Descriptor_One = ("Object Random Element: Fortunate")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Fortunate")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 29:
-                Random_Element_Descriptor_One = ("Object Random Element: Important")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Important")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 30:
-                Random_Element_Descriptor_One = ("Object Random Element: Frightening")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Frightening")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 31:
-                Random_Element_Descriptor_One = ("Object Random Element: Large")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Large")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 32:
-                Random_Element_Descriptor_One = ("Object Random Element: Lethal")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Lethal")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 33:
-                Random_Element_Descriptor_One = ("Object Random Element: Magnificent")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Magnificent")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 34:
-                Random_Element_Descriptor_One = ("Object Random Element: Military")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Military")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 35:
-                Random_Element_Descriptor_One = ("Object Random Element: Modern")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Modern")
                 print(Random_Element_Descriptor_One)
                 break       
             
             elif Object_Random_Element_Descriptors_Roll_One == 36:
-                Random_Element_Descriptor_One = ("Object Random Element: Extravagant")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Extravagant")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 37:
-                Random_Element_Descriptor_One = ("Object Random Element: Helpful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Helpful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 38:
-                Random_Element_Descriptor_One = ("Object Random Element: Mundane")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Mundane")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 39:
-                Random_Element_Descriptor_One = ("Object Random Element: Natural")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Natural")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 40:
-                Random_Element_Descriptor_One = ("Object Random Element: Powerful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Powerful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 41:
-                Random_Element_Descriptor_One = ("Object Random Element: Rare")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Rare")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 42:
-                Random_Element_Descriptor_One = ("Object Random Element: Light")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Light")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 43:
-                Random_Element_Descriptor_One = ("Object Random Element: Loud")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Loud")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 44:
-                Random_Element_Descriptor_One = ("Object Random Element: Reassuring")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Reassuring")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 45:
-                Random_Element_Descriptor_One = ("Object Random Element: Majestic")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Majestic")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 46:
-                Random_Element_Descriptor_One = ("Object Random Element: Meaningful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Meaningful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 47:
-                Random_Element_Descriptor_One = ("Object Random Element: Mechanical")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Mechanical")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 48:
-                Random_Element_Descriptor_One = ("Object Random Element: Ruined")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Ruined")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 49:
-                Random_Element_Descriptor_One = ("Object Random Element: Mysterious")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Mysterious")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 50:
-                Random_Element_Descriptor_One = ("Object Random Element: New")
+                Random_Element_Descriptor_One = ("\tObject Random Element: New")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 51:
-                Random_Element_Descriptor_One = ("Object Random Element: Odd")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Odd")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 52:
-                Random_Element_Descriptor_One = ("Object Random Element: Official")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Official")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 53:
-                Random_Element_Descriptor_One = ("Object Random Element: Small")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Small")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 54:
-                Random_Element_Descriptor_One = ("Object Random Element: Smelly")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Smelly")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 55:
-                Random_Element_Descriptor_One = ("Object Random Element: Positive")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Positive")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 56:
-                Random_Element_Descriptor_One = ("Object Random Element: Powerful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Powerful")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 57:
-                Random_Element_Descriptor_One = ("Object Random Element: Smooth")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Smooth")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 58:
-                Random_Element_Descriptor_One = ("Object Random Element: Valuable")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Valuable")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 59:
-                Random_Element_Descriptor_One = ("Object Random Element: Warm")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Warm")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 60:
-                Random_Element_Descriptor_One = ("Object Random Element: Soft")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Soft")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 61:
-                Random_Element_Descriptor_One = ("Object Random Element: Watery")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Watery")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 62:
-                Random_Element_Descriptor_One = ("Object Random Element: Threatening")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Threatening")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 63:
-                Random_Element_Descriptor_One = ("Object Random Element: Weapon")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Weapon")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 64:
-                Random_Element_Descriptor_One = ("Object Random Element: Useful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Useful")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 65:
-                Random_Element_Descriptor_One = ("Object Random Element: Clothing")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Clothing")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 66:
-                Random_Element_Descriptor_One = ("Object Random Element: Travel")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Travel")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 67:
-                Random_Element_Descriptor_One = ("Object Random Element: Tool")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Tool")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 68:
-                Random_Element_Descriptor_One = ("Object Random Element: Negative")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Negative")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 69:
-                Random_Element_Descriptor_One = ("Object Random Element: Communication")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Communication")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 70:
-                Random_Element_Descriptor_One = ("Object Random Element: Food")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Food")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 71:
-                Random_Element_Descriptor_One = ("Object Random Element: Domestic")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Domestic")
                 print(Random_Element_Descriptor_One)
                 break  
          
             elif Object_Random_Element_Descriptors_Roll_One == 72:
-                Random_Element_Descriptor_One = ("Object Random Element: Artistic")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Artistic")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 73:
-                Random_Element_Descriptor_One = ("Object Random Element: Expected")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Expected")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 74:
-                Random_Element_Descriptor_One = ("Object Random Element: Unexpected")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Unexpected")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 75:
-                Random_Element_Descriptor_One = ("Object Random Element: Strange")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Strange")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 76:
-                Random_Element_Descriptor_One = ("Object Random Element: Resource")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Resource")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 77:
-                Random_Element_Descriptor_One = ("Object Random Element: Fuel")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Fuel")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 78:
-                Random_Element_Descriptor_One = ("Object Random Element: Harmful")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Harmful")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 79:
-                Random_Element_Descriptor_One = ("Object Random Element: Energy")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Energy")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Object_Random_Element_Descriptors_Roll_One == 80:
-                Random_Element_Descriptor_One = ("Object Random Element: Multiple")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Multiple")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 81:
-                Random_Element_Descriptor_One = ("Object Random Element: Single")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Single")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 82:
-                Random_Element_Descriptor_One = ("Object Random Element: Unusual")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Unusual")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 83:
-                Random_Element_Descriptor_One = ("Object Random Element: Bright")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Bright")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 84:
-                Random_Element_Descriptor_One = ("Object Random Element: Ornate")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Ornate")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 85:
-                Random_Element_Descriptor_One = ("Object Random Element: Broken")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Broken")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 86:
-                Random_Element_Descriptor_One = ("Object Random Element: Liquid")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Liquid")
                 print(Random_Element_Descriptor_One)
                 break
             
             elif Object_Random_Element_Descriptors_Roll_One == 87:
-                Random_Element_Descriptor_One = ("Object Random Element: Personal")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Personal")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 88:
-                Random_Element_Descriptor_One = ("Object Random Element: Intriguing")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Intriguing")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 89:
-                Random_Element_Descriptor_One = ("Object Random Element: Active")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Active")
                 print(Random_Element_Descriptor_One)
                 break     
             
             elif Object_Random_Element_Descriptors_Roll_One == 90:
-                Random_Element_Descriptor_One = ("Object Random Element: Inactive")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Inactive")
                 print(Random_Element_Descriptor_One)
                 break    
             
             elif Object_Random_Element_Descriptors_Roll_One == 91:
-                Random_Element_Descriptor_One = ("Object Random Element: Garbage")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Garbage")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 92:
-                Random_Element_Descriptor_One = ("Object Random Element: Useless")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Useless")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 93:
-                Random_Element_Descriptor_One = ("Object Random Element: Primitive")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Primitive")
                 print(Random_Element_Descriptor_One)
                 break   
             
             elif Object_Random_Element_Descriptors_Roll_One == 94:
-                Random_Element_Descriptor_One = ("Object Random Element: Desired")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Desired")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 95:
-                Random_Element_Descriptor_One = ("Object Random Element: Healing")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Healing")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 96:
-                Random_Element_Descriptor_One = ("Object Random Element: Hidden")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Hidden")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 97:
-                Random_Element_Descriptor_One = ("Object Random Element: Prized")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Prized")
                 print(Random_Element_Descriptor_One)
                 break      
             
             elif Object_Random_Element_Descriptors_Roll_One == 98:
-                Random_Element_Descriptor_One = ("Object Random Element: Flora")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Flora")
                 print(Random_Element_Descriptor_One)
                 break 
             
             elif Object_Random_Element_Descriptors_Roll_One == 99:
-                Random_Element_Descriptor_One = ("Object Random Element: Moving")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Moving")
                 print(Random_Element_Descriptor_One)
                 break  
             
             elif Object_Random_Element_Descriptors_Roll_One == 100:
-                Random_Element_Descriptor_One = ("Object Random Element: Confusing")
+                Random_Element_Descriptor_One = ("\tObject Random Element: Confusing")
                 print(Random_Element_Descriptor_One)
                 break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             
@@ -5336,502 +5348,502 @@ def Objects_Element_Descriptors():
     while True:
         try:
                 if Object_Random_Element_Descriptors_Roll_Two == 1:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Amusing")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Amusing")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 2:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Ancient")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Ancient")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 3:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Aromatic")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Aromatic")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 4:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Average")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Average")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 5:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Beautiful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Beautiful")
                     print(Random_Element_Descriptor_Two)
                     break
                
                 elif Object_Random_Element_Descriptors_Roll_Two == 6:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Bizarre")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Bizarre")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 7:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Classy")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Classy")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 8:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Colorful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Colorful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 9:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Creepy")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Creepy")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 10:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Cute")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Cute")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 11:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Damaged")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Damaged")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 12:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Delicate")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Delicate")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 13:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Disgusting")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Disgusting")
                     print(Random_Element_Descriptor_Two)
                     break         
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 14:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Cold")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Cold")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 15:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Empty")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Empty")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 16:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 17:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Dangerous")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Dangerous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 18:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Exotic")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Exotic")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 19:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Deliberate")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Deliberate")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 20:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Delightful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Delightful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 21:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Faded")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Faded")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 22:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Familiar")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Familiar")
                     print(Random_Element_Descriptor_Two)
                     break        
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 23:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Enormous")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Enormous")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 24:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Fancy")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Fancy")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 25:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Hard")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Hard")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 26:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Heavy")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Heavy")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 27:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Horrible")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Horrible")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 28:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Fortunate")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Fortunate")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 29:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Important")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Important")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 30:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Frightening")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Frightening")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 31:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Large")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Large")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 32:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Lethal")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Lethal")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 33:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Magnificent")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Magnificent")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 34:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Military")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Military")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 35:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Modern")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Modern")
                     print(Random_Element_Descriptor_Two)
                     break       
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 36:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Extravagant")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Extravagant")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 37:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Helpful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Helpful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 38:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Mundane")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Mundane")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 39:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Natural")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Natural")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 40:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Powerful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Powerful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 41:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Rare")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Rare")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 42:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Light")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Light")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 43:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Loud")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Loud")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 44:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Reassuring")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Reassuring")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 45:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Majestic")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Majestic")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 46:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Meaningful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Meaningful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 47:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Mechanical")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Mechanical")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 48:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Ruined")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Ruined")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 49:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Mysterious")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Mysterious")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 50:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: New")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: New")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 51:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Odd")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Odd")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 52:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Official")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Official")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 53:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Small")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Small")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 54:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Smelly")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Smelly")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 55:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Positive")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Positive")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 56:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Powerful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Powerful")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 57:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Smooth")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Smooth")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 58:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Valuable")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Valuable")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 59:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Warm")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Warm")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 60:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Soft")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Soft")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 61:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Watery")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Watery")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 62:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Threatening")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Threatening")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 63:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Weapon")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Weapon")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 64:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Useful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Useful")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 65:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Clothing")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Clothing")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 66:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Travel")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Travel")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 67:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Tool")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Tool")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 68:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Negative")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Negative")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 69:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Communication")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Communication")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 70:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Food")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Food")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 71:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Domestic")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Domestic")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 72:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Artistic")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Artistic")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 73:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Expected")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Expected")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 74:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Unexpected")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Unexpected")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 75:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Strange")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Strange")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 76:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Resource")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Resource")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 77:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Fuel")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Fuel")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 78:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Harmful")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Harmful")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 79:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Energy")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Energy")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 80:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Multiple")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Multiple")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 81:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Single")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Single")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 82:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Unusual")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Unusual")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 83:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Bright")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Bright")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 84:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Ornate")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Ornate")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 85:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Broken")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Broken")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 86:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Liquid")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Liquid")
                     print(Random_Element_Descriptor_Two)
                     break
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 87:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Personal")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Personal")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 88:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Intriguing")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Intriguing")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 89:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Active")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Active")
                     print(Random_Element_Descriptor_Two)
                     break     
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 90:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Inactive")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Inactive")
                     print(Random_Element_Descriptor_Two)
                     break    
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 91:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Garbage")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Garbage")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 92:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Useless")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Useless")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 93:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Primitive")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Primitive")
                     print(Random_Element_Descriptor_Two)
                     break   
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 94:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Desired")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Desired")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 95:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Healing")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Healing")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 96:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Hidden")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Hidden")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 97:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Prized")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Prized")
                     print(Random_Element_Descriptor_Two)
                     break      
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 98:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Flora")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Flora")
                     print(Random_Element_Descriptor_Two)
                     break 
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 99:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Moving")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Moving")
                     print(Random_Element_Descriptor_Two)
                     break  
                 
                 elif Object_Random_Element_Descriptors_Roll_Two == 100:
-                    Random_Element_Descriptor_Two = ("Object Random Element #2: Confusing")
+                    Random_Element_Descriptor_Two = ("\tObject Random Element #2: Confusing")
                     print(Random_Element_Descriptor_Two)
                     break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
                 
@@ -5840,6 +5852,6 @@ def Objects_Element_Descriptors():
         except ValueError as exception:
                     print("Invalid Entries Try Again")
 
-
-RegionDesc_LocationSize()
-Known_Elements()
+if __name__ == '__main__':
+    RegionDesc_LocationSize()
+    Known_Elements()
